@@ -11,7 +11,10 @@
 body {
     font-family: 'Arial', sans-serif;
     --webkit-font-smoothing:antialiased;
-    background: #000;
+    background: #000 url("/img/background.jpg");
+    background-repeat: no-repeat;
+    background-size: auto;
+    /*background-position: center center; */
     color: #999;
 }
 
@@ -27,3 +30,11 @@ a{
     color: #fff;
     text-decoration:none;
 }
+.showcase-content {
+    text-align: center;
+    font-size: large;
+    top: 300px;
+    position: relative;
+}
+
+
