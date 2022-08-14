@@ -126,6 +126,20 @@ img {
     overflow: hidden;
     padding: 0 2rem;
 }
+.text-xl{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.text-lg{
+    font-size: 1.8rem;
+    margin-bottom:1rem;
+}
+
+.text-center{
+    text-align:center;
+}
+
 
 .tabs p{
     font-size: 1.2rem;
@@ -141,6 +155,44 @@ img {
     color: #ffffff;
 }
 
+.tab-border{
+    border-bottom: var(--primary-color) 4px solid;
+}
+
+.tab-content{
+    padding: 3rem 0;
+    background: #000000;
+    color: #ffffff;
+}
+
+#tab-1-content .tab-1-content-inner{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+    justify-content: center;
+    align-content: center;
+}
+
+#tab-2-content .tab-2-content-top{
+    display:grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+#tab-2-content .tab-2-content-bottom{
+    margin-top: 2rem;
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2rem;
+    justify-content: center;
+    align-content: center;
+    text-align:center;
+}
+
+
+
 .btn{
     display: inline-block;
     background: var(--primary-color);
@@ -151,6 +203,7 @@ img {
     border: none;
     cursor: pointer;
     margin-right: 0.5rem;
+    transition: opacity 0.2s ease-in;
     outline: none;
     box-shadow: 0 1px 0 rgba(0,0,0, 0.45);
     border-radius: 2px;
@@ -172,7 +225,7 @@ img {
 }
 
 .btn-lg{
-    font-size: 2rem;
+    font-size: 1rem;
     padding: 0.8rem 1.3rem;
     text-transform: uppercase;
 }
